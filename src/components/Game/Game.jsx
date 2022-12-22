@@ -4,7 +4,7 @@ import styles from './Game.module.css';
 
 const Game = (props) => {
 
-  const percentage = Math.round((props.step / props.question.length) * 100);
+  const percentage = Math.round((props.step / props.questions.length) * 100);
 
   console.log(percentage);
 
