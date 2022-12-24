@@ -11,7 +11,7 @@ const Game = (props) => {
     return (
       <div className={styles.progress}>
         <div style={{width: `${percentage}%`}} className={styles.progressBar}></div>
-        <h1>{props.question.title}</h1>
+        <h1 className={styles.questionTitle}>{props.question.title}</h1>
           <ul>
             {
               props.question.variants.map((text, index) => <li onClick={() => props.onClickVariant(index)} key={text}>{text}</li>)
